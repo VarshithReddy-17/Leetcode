@@ -1,7 +1,7 @@
 class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums) {
-       /* int low=0;
+       int low=0;
         int high=nums.size()-1;
         int ans=-1;
         while (low<=high) {
@@ -34,20 +34,6 @@ public:
                 }
             }
             break;
-        }
-        return ans;*/
-        unordered_map<int,int> mp;
-        int ans=-1;
-        for(auto i: nums)
-        {
-            mp[i]++;
-        }
-        for(auto j:mp)
-        {
-            if(j.second==1)
-            {
-                ans=j.first;
-            }
         }
         return ans;
     }
