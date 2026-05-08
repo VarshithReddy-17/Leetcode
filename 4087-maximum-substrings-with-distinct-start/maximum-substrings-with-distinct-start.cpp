@@ -6,7 +6,6 @@ public:
         {
             st.insert(i);
         }
-        int ans=st.size();
-        return ans;
+        return st.size();
     }
 };
